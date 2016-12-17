@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@drawable/p1"
+    >
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="25dp"
+        android:src="@mipmap/ic_launcher"/>
+    <TextView
+        android:id="@+id/person_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="个人中心"
+        android:layout_below="@+id/iv"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/login_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="loginTv"
+        android:text="请登录"
+        android:layout_below="@+id/person_center"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
